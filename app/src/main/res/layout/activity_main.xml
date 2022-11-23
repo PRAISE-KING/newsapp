@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="News App"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/sports"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="sports"
+        android:textSize="25dp"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/Tech"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Technology"
+        android:textSize="25dp"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/Weather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Weather"
+        android:textSize="25dp"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/Business"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Business"
+        android:textSize="25dp"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/BBC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BBC"
+        android:textSize="25dp"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/Camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Capture News"
+        android:textSize="25dp"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/Dial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Emergency"
+        android:textSize="25dp"
+        android:layout_margin="10dp"/>
+
+</LinearLayout>

@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        /* Element Level Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #fff;
+    font-family: 'Lato', sans-serif;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    min-height: 55px;
+    width: 100vw;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+svg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    height: 170px;
+    width: 100vw;
+
+}
+
+ i {
+     color: lightblue;
+ }
+
+ footer {
+    margin: auto;
+    width: 80vw;
+    background-color: rgb(187, 184, 184);
+    padding: 0px;
+  }
+
+  footer > ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  footer > ul > li {
+    padding: 0 10px;
+
+  }
+
+nav{
+    z-index: 3;
+    position: absolute;
+    top: 0px;
+    right: 50px;
+}
+li{
+    list-style: none;
+    float: right;
+    padding: 10px;
+
+}
+
+a{
+    color: white;
+    text-shadow: 1px 1px lightslategray;
+    text-decoration: none;
+}
+
+a:hover {
+    text-shadow: 3px 3px 5px #fff;
+    }
+
+
+
+  /* Class Level Styling */
+
+.wrapper{
+    overflow-x:hidden;
+}
+
+.title{
+    position: fixed;
+    top: 0px;
+    margin-top: 10px;
+    width: 100vw;
+    text-align: center;
+    color: white;
+    text-shadow:    2px 2px black;
+}
+
+.logo-container{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+
+
+.icon-container{
+
+
+}
+
+.container{
+    margin: auto;
+    width: 98vw;
+    margin-top: 100px;
+}
+
+.service-container{
+    display: flex;
+    width: 70vw;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.services{
+    text-align:center;
+    width: 100vw;
+    margin: auto;
+    padding-bottom: 100px;
+
+}
+.service-description{
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+.product{
+    border: 1px solid black;
+    margin: 100px 10px 100px 10px ;
+    padding: 0px;
+    width: calc(100%  / 3);
+}
+
+.product-title{
+    background-color: #0ae;
+    padding-top: 10px;
+    height: 40px;
+    color: white;
+}
+
+.product-price{
+    font-size: 2em;
+
+}
+
+.product-description{
+    font-size: 1rem;
+}
+
+
+/* Product Select Buttons */
+.btn{
+    background-color: lightsteelblue;
+    box-shadow: 5px 5px 5px grey;
+    border-radius: 5px;
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+}
+/*  Email Submit Button  */
+.submit-button{
+    width: 140px;
+		height: 40px;
+    background-color: lightsteelblue;
+    box-shadow: 5px 5px 5px grey;
+    border-radius: 5px;
+}
+/* ID Level Styling */
+
+#header-img{
+    width: 100px;
+    height: 100px;
+}
+
+
+
+#video-explanation{
+    text-align: center;
+}
+
+#pricing{
+    text-align: center;
+    margin: auto;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+}
+/* Responsive Styling */
+
+ @media screen and (max-width: 800px) {
+
+nav {
+    display:none;
+}
+
+#pricing{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+.product{
+    border: 1px solid black;
+    padding: 0px;
+    width: 100vw;
+    margin: 10px 0px; 10px; 0px;
+}
+body{
+    width:100vw;
+    position: absolute;
+
+}
+iframe{
+    width:100vw;
+    height: auto;
+}
+footer{
+    width:100vw;
+}
+}
+
+
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <header id="header">
+
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+            <path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #0ae;"></path>
+        </svg><!-- NOTE: I created this SVG path on the following webiste: https://smooth.ie/blogs/news/svg-wavey-transitions-between-sections -->
+
+        <div class="logo-container">
+            <img id="header-img" src="http://www.charlieholmes.net/portfolio/fcc/pool.png" alt="Pool logo" />
+        </div>
+
+        <nav id="nav-bar">
+            <ul>
+
+                <a href="#services" class="nav-link">
+                    <li>
+                        Services
+                    </li>
+                </a>
+                <a href="#video-explanation" class="nav-link">
+                    <li>
+                        Video Explanation
+                    </li>
+                </a>
+                <a href="#pricing" class="nav-link">
+                    <li>
+                        Pricing
+                    </li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="title">
+        <h1>Clean Pool Pool People</h1>
+        <form id="form" action="http://www.freecodecamp.org/email-submit">
+            <input id="email" name="email" type="email" placeholder="Enter your email address" required />
+            <input id="submit" type="submit" value="Get A Quote Today" class="submit-button"></input>
+
+        </form>
+    </div>
+
+    <div class="container">
+        <section id="services" class="services">
+            <div class="service-container">
+
+                <div class="icon-container">
+                    <i class="fas fa-swimming-pool fa-3x"></i>
+                </div>
+
+                <div class="service-description">
+                    <h2>Chemical Balalce</h2>
+                    <p>We will treat and balance the chemicals in your pool,
+                        so you can get swimming in clean and safe water as soon as possible.</p>
+                </div>
+
+            </div>
+
+            <div class="service-container">
+
+                <div class="icon-container">
+                    <i class="fas fa-swimmer fa-3x"></i>
+                </div>
+
+                <div class="service-description">
+                    <h2>Debri Removal</h2>
+                    <p>It is normal for debri, such as leaves or bugs, to accumulate in your pool,
+                        and it will need to be kept up with on a regular basis. We will do the hard work
+                        of removing all of that for you, so you don't have to.</p>
+                </div>
+            </div>
+
+            <div class="service-container">
+
+                <div class="icon-container">
+                    <i class="far fa-life-ring fa-3x"></i>
+                </div>
+
+                <div class="service-description">
+                    <h2>Safety Inspection</h2>
+                    <p>There are many hidden dangers associated with pools. Our professionals will analyze
+                        your system and certify that it is safe for you and your family to use Put yourself
+                        at ease, call us to certify your pool's safety today.</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section id="video-explanation">
+            <h2>Video Explanation</h2>
+            <iframe src="https://player.vimeo.com/video/79160251" width="640" height="356" id="video"   ></iframe>
+        </section>
+
+        <section  id="pricing">
+            <div class="product">
+                <div class="product-title">ON DEMAND POOL CLEANING SERVICE</div>
+                <p class="product-price">$250</p>
+                <p class="product-description">
+                    Lorem ipsum.Lorem ipsum.Lorem <br> ipsum dolor.Lorem ipsum
+                </p>
+                <button class="btn">Select</button>
+            </div>
+            <div class="product">
+                <div class="product-title">MONTHLY POOL SERVICE</div>
+                <p class="product-price">$500</p>
+                <p class="product-description">
+                    Lorem ipsum.Lorem ipsum.<br>Lorem ipsum dolor.Lorem ipsum
+                </p>
+                <button class="btn">Select</button>
+            </div>
+            <div class="product">
+                <div class="product-title">WEEKLY POOL SERVICE</div>
+                <p class="product-price">$1200</p>
+                <p class="product-description">
+                    Lorem ipsum.Lorem ipsum.<br>Lorem ipsum dolor.Lorem ipsum
+                </p>
+                <button class="btn">Select</button>
+            </div>
+        </section>
+
+        <footer>
+            <div>
+                <ul>
+                    <a href="#services">
+                        <li>
+                            Services
+                        </li>
+                    </a>
+                    <a href="#video-explanation">
+                        <li>
+                            Video Explanation
+                        </li>
+                    </a>
+                    <a href="#pricing">
+                        <li>
+                            Pricing
+                        </li>
+                    </a>
+                </ul>
+                <p class="footer-text">
+                    Disclaimer: This is a make purely fictious company. This site is only intended to display my Web Coding skills. NOTE: the embedded video is taken from vimeo and I am in no way affiliated with the makers of that film. It just happen to fit the theme of this example.
+                </p>
+            </div>
+
+        </footer>
+    </div>
+
+
+</div>
+<script src="https://kit.fontawesome.com/cdac2ff020.js" crossorigin="anonymous">
+</script>
+
+</body>
+</html>
